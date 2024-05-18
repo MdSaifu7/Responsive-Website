@@ -54,10 +54,32 @@ align-items: center;
   font-size: 0.9em;
   text-decoration: none;
   color:white;
-
-
-
 }
+
+ @media all and (max-width: 450px) {
+  
+
+  nav{ display: grid;}
+
+  nav img{ grid-column: 1/2;
+  grid-row: 1;}
+nav p{
+  grid-column: 2/3;
+  grid-row: 1;
+}
+nav .linkContainer {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+
+  .linkContainer ul {
+    padding-left: 0;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+  }
+
+} 
 
 
 .welcomePage{
@@ -167,7 +189,7 @@ height: 100px;
 }
 
 .active{
- /* height: 100%; */
+
   background-color: red;
   
 }
